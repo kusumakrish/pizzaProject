@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    /* background: linear-gradient(to right, #c31432, #240b36); */
+  background: linear-gradient(to right, #a8c0ff, #962b68);
+    /* font-family: "Oswald", sans-serif; */
+    box-sizing: border-box;
+    /* animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
+  }
+  
+  
+  .Head {
+    font-size: 2.5rem;
+    color: #fff;
+  }
+  .PizzaOne {
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 100px;
+    cursor: pointer;
+    background-image: url("https://5.imimg.com/data5/RV/MJ/MY-16339859/pizza-base-500x500.jpg");
+    background-size: contain;
+    border-radius: 50%;
+    display: inline-block;
+    
+  }
+  
+  .PizzaTwo {
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    background-image: url("https://tse1.mm.bing.net/th?id=OIP.brrOYXFxjmPr01qkIXSobgAAAA&pid=Api&P=0");
+    background-size: contain;
+    display: inline-block;
+    float: right;
+    margin-right: 50px;
+    margin-top: 100px;
+    border-radius: 50%;
+    
+  }
+  ul {
+    /* width: 27%; */
+    /* height: 120vh; */
+    display: inline-block;
+    display: flex;
+    /* position: absolute;
+    right: 0%;
+    top: 100px; */
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .hold {
+    /* transition: 2s;
+    transform: rotate(360deg);
+    border: 10px dashed goldenrod; */
+  }
+  
+  .list {
+    display: none;
+    transition: 3s all;
+  }
+  .position {
+    color: #fff;
+    position: relative;
+    top: 120px;
+    left: 10px;
+    font-size: 1.3rem;
+    /* border: 1px solid #000; */
+  }
+  .positionM {
+    /* border: 1px solid #000; */
+    color: #fff;
+    position: relative;
+    top: 250px;
+    left: 60px;
+    font-size: 1.8rem;
+  }
+  .Pizza1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url("https://tse4.mm.bing.net/th?id=OIP.qV2MALHtkoXPBKwLfykPEgHaHa&pid=Api&P=0");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* transform: scale(1.5) */
+    cursor: grab;
+  }
+  .Pizza2 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    background-image: url("https://tse1.mm.bing.net/th?id=OIP.WsE7kbqqJR70m4Y78jT2nwAAAA&pid=Api&P=0 ");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 20px;
+    cursor: grab;
+  }
+  .Pizza3 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    background-image: url("https://tse1.mm.bing.net/th?id=OIP.wdBfUcTo5g5XznYl1lBIzQHaHT&pid=Api&P=0");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: grab;
+  }
+  .Pizza4 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    background-image: url("https://tse1.mm.bing.net/th?id=OIP.WNn6KYPV-R8aNF0ISaj1wQHaHV&pid=Api&rs=1&c=1&qlt=95&w=105&h=104");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #fff;
+    margin-left: 20px;
+    cursor: grab;
+  }
+  .mobileTab {
+    display: none;
+  }
+  .dropPoint {
+    width: 350px;
+    height: 350px;
+    /* border: 30px dashed yellow; */
+    background-color: white;
+    position: absolute;
+    top: 300px;
+    right: 37%;
+    border-radius: 50%;
+    transition: 1s all;
+    z-index: 1000;
+  }
+  
+  .logo {
+    animation: MyCam 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate
+      both;
+  }
+  @keyframes MyCam {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  #dropzone {
+    position: relative;
+    border: 10px dotted #fff;
+    border-radius: 20px;
+    color: white;
+    font: bold 24px/200px arial;
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  
+  #dropzone:hover {
+    border: 10px solid #fe5;
+    color: #fe5;
+    cursor: pointer;
+    background-color: #222;
+  }
+  
+  .pizzabaseOne {
+    background-image: url("https://5.imimg.com/data5/RV/MJ/MY-16339859/pizza-base-500x500.jpg");
+    background-size: cover;
+    z-index: 100;
+  }
+  .pizzabaseTwo {
+    background-image: url("https://tse1.mm.bing.net/th?id=OIP.brrOYXFxjmPr01qkIXSobgAAAA&pid=Api&P=0");
+    background-size: cover;
+  }
+  .Pizza1Pepperoni {
+    background-image: url("https://tse4.mm.bing.net/th?id=OIP.qV2MALHtkoXPBKwLfykPEgHaHa&pid=Api&P=0");
+    background-size: cover;
+  }
+  .Pizza1Mushrooms {
+    background-image: url("https://tse1.mm.bing.net/th?id=OIP.WsE7kbqqJR70m4Y78jT2nwAAAA&pid=Api&P=0");
+    background-size: cover;
+  }
+  
+  .Pizza1Onions {
+    background-image: url("https://tse1.mm.bing.net/th?id=OIP.wdBfUcTo5g5XznYl1lBIzQHaHT&pid=Api&P=0");
+    background-size: cover;
+  }
+  
+  .Pizza1Peppers {
+    background-image: url("https://tse1.mm.bing.net/th?id=OIP.WNn6KYPV-R8aNF0ISaj1wQHaHV&pid=Api&rs=1&c=1&qlt=95&w=105&h=104");
+    background-size: cover;
+  }
+  
+  
+  
